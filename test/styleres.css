@@ -1,0 +1,151 @@
+body{
+	margin:0;
+	padding:20px;
+	font-family: sans-serif;
+    background-color: #C5B4E3;
+    color: black;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table td,.table th{
+  padding:12px 15px;
+  border:1px solid #ddd;
+  text-align: center;
+  font-size:16px;
+}
+
+.table td{
+	background-color: rgb(21, 20, 20);
+	color: rgb(220, 220, 220);
+}
+
+.table th{
+	background-color: rgb(21, 20, 20);
+	color: rgb(220, 220, 220);
+}
+
+.table tbody tr:nth-child(even){
+	background-color: rgb(13, 14, 14);
+    color: rgb(227, 227, 227);
+}
+
+/*responsive*/
+
+@media(max-width: 500px){
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
+
+.top{
+    color: black;
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+
+}
+
+
+
+.responsive-images {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    justify-content: center;
+  }
+  
+
+  .responsive-images img {
+    width: 100%;
+    max-width: 400px; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+
+  /**footer**/
+
+  
+.site-footer {
+    background-color: #ffffff;
+    color: rgb(20, 20, 20);
+    padding: 20px 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 15px;
+  }
+
+
+  .footer-about, .footer-links, .footer-contact {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  h3 {
+    margin-top: 0;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-about, .footer-links, .footer-contact {
+      min-width: 100%;
+      text-align: center;
+    }
+  }
+  
+
+
+
+
